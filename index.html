@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALLO FACTO</title>
+  <link rel="stylesheet" href="Allofacto-css.css" />
+<!-- Balises Open Graph -->
+<meta property="og:title" content="ALLO FACTO – Dépannage Plomberie, Électricité et plus au Havre" />
+<meta property="og:description" content="Besoin d’un dépannage rapide au Havre ? ALLO FACTO intervient en plomberie, électricité, serrurerie et menuiserie. Disponible 7j/7." />
+<meta property="og:image" content="https://www.tonsite.fr/images/allo-facto-preview.webp" />
+<meta property="og:url" content="https://www.tonsite.fr" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="fr_FR" />
+
+</head>
+<body>
+
+  <header>
+    <h1>ALLO FACTO</h1>
+    <p><strong>Dépannage et petits travaux</strong></p>
+    <p>Votre technicien au Havre, Etretat, Fécamp, Bolbec, Honfleur, Deauville, Trouville... et leurs alentours</p>
+    <button class="burger">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="apropos">
+    <h2>À propos d’ALLO FACTO</h2>
+    <p>Technicien multi-techniques et multi-services passionné depuis plus de 10 ans, j’ai décidé de devenir
+      auto-entrepreneur en 2024.</p>
+    <p><strong>Mon objectif :</strong> Servir le client, pour un simple trou à percer ou des travaux plus conséquents, afin
+      de vous donner entière satisfaction.</p>
+    <p><strong>FABRICE, LE COUTEAU-SUISSE À VOTRE SERVICE.</strong></p>
+    </section>
+  </section>
+
+  <section id="realisations">
+    <h2>Réalisations d’ALLO FACTO</h2>
+
+    <h3 class="highlight">Électricité</h3>
+    <figure>
+      <picture>
+        <source srcset="images/pose-tableau-electrique.webp" type="image/webp">
+        <img src="images/pose-tableau-electrique.jpg" alt="Pose de tableau électrique dans un appartement au Havre" loading="lazy" width="300" height="200">
+      </picture>
+      <figcaption>Installation d’un tableau électrique moderne</figcaption>
+    </figure>
+
+    <figure>
+      <picture>
+        <source srcset="images/prise-salon.webp" type="image/webp">
+        <img src="images/prise-salon.jpg" alt="Installation de prise murale dans un salon rénové" loading="lazy" width="300" height="200">
+      </picture>
+      <figcaption>Pose de prises électriques encastrées</figcaption>
+    </figure>
+
+    <h3 class="highlight">Plomberie</h3>
+    <figure>
+      <picture>
+        <source srcset="images/installation-evier-plomberie.webp" type="image/webp">
+        <img src="images/installation-evier-plomberie.jpg" alt="Raccordement de plomberie sous évier de cuisine" loading="lazy" width="300" height="200">
+      </picture>
+      <figcaption>Installation plomberie sous évier de cuisine</figcaption>
+    </figure>
+
+    <figure>
+      <picture>
+        <source srcset="images/chauffe-eau-lehavre.webp" type="image/webp">
+        <img src="images/chauffe-eau-lehavre.jpg" alt="Remplacement de chauffe-eau électrique" loading="lazy" width="300" height="200">
+      </picture>
+      <figcaption>Changement de chauffe-eau 150L</figcaption>
+    </figure>
+
+    <h3 class="highlight">Serrurerie & Menuiserie</h3>
+    <figure>
+      <picture>
+        <source srcset="images/serrure-porte-blindee.webp" type="image/webp">
+        <img src="images/serrure-porte-blindee.jpg" alt="Remplacement de serrure 3 points sur porte blindée" loading="lazy" width="300" height="200">
+      </picture>
+      <figcaption>Pose de serrure sécurisée</figcaption>
+    </figure>
+
+    <figure>
+      <picture>
+        <source srcset="images/pose-porte-bois.webp" type="image/webp">
+        <img src="images/pose-porte-bois.jpg" alt="Pose d’une porte intérieure en bois clair" loading="lazy" width="300" height="200">
+      </picture>
+      <figcaption>Menuiserie : installation de porte intérieure</figcaption>
+    </figure>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contactez ALLO FACTO</h2>
+    <p>Téléphone : <span class="highlight">06.68.53.85.04</span><br>
+       Email : <span class="highlight">allo.facto76@gmail.com</span>
+    </p>
+    <form>
+      <input type="text" placeholder="Votre nom" required />
+      <input type="email" placeholder="Votre email" required />
+      <textarea placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ALLO FACTO - Dépannage et petits travaux</p>
+  </footer>
+
+  <script>
+    // Burger menu toggle
+    document.querySelector('.burger').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
+
