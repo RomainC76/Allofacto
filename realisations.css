@@ -38,14 +38,19 @@ h1, h2 {
   color: white;
 }
 
+/* Conteneur de galerie */
 .galerie {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
+/* Style uniforme pour les images */
 .galerie img {
-  width: 100%;
-  border: 3px solid yellow;
+  width: 300px;         /* ajuste selon ton design */
+  height: 200px;
+  object-fit: cover;
+  margin: 5px;
+  border-radius: 8px;   /* optionnel pour un style doux */
 }
