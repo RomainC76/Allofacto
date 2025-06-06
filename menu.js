@@ -4,11 +4,12 @@ document.addEventListener('DOMContentLoaded', function () {
     .then(data => {
       document.body.insertAdjacentHTML('afterbegin', data);
 
-      const burger = document.querySelector('.burger');
-      const nav = document.querySelector('.nav-links');
+      const burger = document.getElementById("burger");
+      const navLinks = document.getElementById("nav-links");
 
       if (burger && nav) {
         burger.addEventListener('click', () => {
+          navLinks.classList.toggle("active");
           const expanded = burger.getAttribute('aria-expanded') === 'true';
           burger.setAttribute('aria-expanded', String(!expanded));
           burger.setAttribute('aria-label', expanded ? 'Ouvrir le menu' : 'Fermer le menu');
