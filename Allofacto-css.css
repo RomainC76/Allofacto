@@ -104,6 +104,9 @@ footer {
 /* === CONTENUS GÉNÉRAUX === */
 main {
   padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1, h2 {
