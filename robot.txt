@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://romainc76.github.io/Allofacto/sitemap.xml
