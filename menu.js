@@ -1,4 +1,4 @@
-import Banner from '/Banner';
+
 
 document.addEventListener('DOMContentLoaded', function () {
   fetch('header.html')
