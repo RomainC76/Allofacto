@@ -15,6 +15,8 @@ body {
 /* === HEADER / NAVIGATION === */
 header {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: black;
   padding: 15px 20px;
   position: relative;
