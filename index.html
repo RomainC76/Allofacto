@@ -4,47 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALLO FACTO</title>
-    <link rel="stylesheet" href="Allofacto-css.css"> 
+    <title>Allofacto – Accueil</title>
+    <meta name="description"
+        content="Allofacto est une entreprise française spécialisée dans la fabrication de pièces sur mesure.">
+    <meta name="author" content="Allofacto">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Allofacto – Accueil">
+    <meta property="og:description" content="Fabrication de pièces sur mesure pour particuliers et professionnels.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://romainc76.github.io/Allofacto/">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
+    <!-- Header injecté dynamiquement -->
     <main>
-        <section id="a-propos">
-            <h2>À propos d’ALLO FACTO</h2>
-            <p>Technicien multi-techniques et multi-services passionné depuis plus de 10 ans, j’ai décidé de devenir
-                auto-entrepreneur en 2024.</p>
-            <p><strong>Mon objectif :</strong> Servir le client, pour un simple trou à percer ou des travaux plus
-                conséquents, afin de vous donner entière satisfaction.</p>
-            <p><strong>FABRICE, LE COUTEAU-SUISSE À VOTRE SERVICE.</strong></p>
-        </section>
-
-        <section id="zones">
-            <h2>Zone d’intervention</h2>
-            <p>Votre technicien au Havre, Étretat, Fécamp, Bolbec, Honfleur, Deauville, Trouville... et leurs alentours
+        <h1>Bienvenue chez Allofacto</h1>
+        <section>
+            <p>Nous réalisons des pièces uniques sur mesure, à destination des professionnels comme des particuliers.
             </p>
         </section>
     </main>
 
     <footer>
-        <p>Téléphone : <a href="tel:0668538504">06.68.53.85.04</a></p>
-        <p>Email : <a href="mailto:allo.facto76@gmail.com">allo.facto76@gmail.com</a></p>
+        <p>© 2025 Allofacto – Tous droits réservés.</p>
     </footer>
-<script>
-    fetch('header.html')
-        .then(res => res.text())
-        .then(data => {
-            document.body.insertAdjacentHTML('afterbegin', data);
-            const burger = document.querySelector('.burger');
-            const nav = document.querySelector('.nav-links');
-            burger.addEventListener('click', () => {
-                nav.classList.toggle('nav-active');
-                burger.classList.toggle('toggle');
-            });
-        });
-</script>
 
+    <script src="menu.js"></script>
 </body>
 
 </html>

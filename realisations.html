@@ -1,51 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allofacto – Réalisations</title>
+    <meta name="description"
+        content="Découvrez les réalisations d’Allofacto : pièces techniques, design et sur mesure.">
+    <meta name="author" content="Allofacto">
+    <link rel="stylesheet" href="style.css">
+
+    <meta property="og:title" content="Allofacto – Réalisations">
+    <meta property="og:description" content="Nos créations pour les clients professionnels et particuliers.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://romainc76.github.io/Allofacto/realisations.html">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
 <body>
-<h2>Réalisations d’ALLO FACTO</h2>
 
-<section>
-    <h3>Électricité</h3>
-    <ul>
-        <li>Recherche de pannes électriques</li>
-        <li>Remplacement d’appareillages électriques (Prises de courant, interrupteurs)</li>
-        <li>Remplacement d’ampoules</li>
-        <li>Installation et remplacement de luminaires</li>
-        <li>Installation et remplacement de détecteurs de fumée</li>
-    </ul>
-</section>
+    <main>
+        <h1>Nos réalisations</h1>
+        <section>
+            <p>Voici une sélection de projets menés par notre équipe...</p>
+            <!-- Images, galeries, ou projets ici -->
+        </section>
+    </main>
 
-<section>
-    <h3>Plomberie</h3>
-    <ul>
-        <li>Recherche de fuites</li>
-        <li>Débouchage de WC</li>
-        <li>Dépannage de WC (Remplacement de flotteurs, mécanismes et robinets d’arrêt de WC)</li>
-        <li>Remplacement de WC</li>
-        <li>Débouchage de canalisations d’éviers et de lavabos</li>
-        <li>Remplacement de robinetterie (Éviers, lavabos, douches, baignoires, robinets de machines à laver)</li>
-    </ul>
-</section>
+    <footer>
+        <p>© 2025 Allofacto – Tous droits réservés.</p>
+    </footer>
 
-<section>
-    <h3>Serrurerie & Menuiserie</h3>
-    <ul>
-        <li>Remplacement de poignées de portes</li>
-        <li>Remplacement de cylindres de portes</li>
-        <li>Installation et remplacement de verrous de portes et entrebâilleurs</li>
-        <li>Réparation de volets roulants (mécanismes, manivelles)</li>
-        <li>Montage de meubles en kit</li>
-    </ul>
-</section>
-<script>
-    fetch('header.html')
-        .then(res => res.text())
-        .then(data => {
-            document.body.insertAdjacentHTML('afterbegin', data);
-            const burger = document.querySelector('.burger');
-            const nav = document.querySelector('.nav-links');
-            burger.addEventListener('click', () => {
-                nav.classList.toggle('nav-active');
-                burger.classList.toggle('toggle');
-            });
-        });
-</script>
-
+    <script src="menu.js"></script>
 </body>
+
+</html>
