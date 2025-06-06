@@ -28,5 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
       console.error('Erreur lors du chargement du menu:', error);
     });
 });
+// Fermer le menu quand on clique sur un lien (mobile)
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+  });
+});
 
 
