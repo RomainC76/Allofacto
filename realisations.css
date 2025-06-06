@@ -1,0 +1,51 @@
+body {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.realisations {
+  padding: 30px;
+}
+
+h1, h2 {
+  color: yellow;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.categorie img {
+  border: 3px solid yellow;
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.section ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  color: white;
+}
+
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.galerie img {
+  width: 100%;
+  border: 3px solid yellow;
+}
