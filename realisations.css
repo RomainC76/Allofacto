@@ -21,11 +21,11 @@ h1, h2 {
 }
 
 .categorie img {
-  border: 3px solid yellow;
-  width: 150px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  width: 300px;         /* ajuste selon ton design */
+  height: 200px;
+  object-fit: cover;
+  margin: 5px;
+  border-radius: 8px;   /* optionnel pour un style doux */
 }
 
 .section {
