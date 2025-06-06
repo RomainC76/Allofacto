@@ -173,3 +173,51 @@ section {
   display: block;
   margin: 10px auto;
 }
+
+
+/* ============ HEADER FIXE ============ */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ============ FOOTER FIXE ============ */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ============ ESPACE POUR LE CONTENU ============ */
+main {
+  padding-top: 100px; /* ajuste selon la hauteur de ton header */
+  padding-bottom: 80px; /* ajuste selon la hauteur de ton footer */
+}
+
+/* ============ FLEXBOX POUR LES IMAGES ============ */
+.flex-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.flex-images img {
+  flex: 1 1 200px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
