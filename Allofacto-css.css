@@ -76,12 +76,6 @@ nav {
   color: white;
 }
 
-.burger {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-  margin-bottom: 10px;
-}
 
 /* ======== HERO ======== */
 .hero {
@@ -186,9 +180,6 @@ footer {
 
 /* ======== RESPONSIVE ======== */
 @media (max-width: 768px) {
-  .burger {
-    display: block;
-  }
 
   nav {
     align-items: flex-start;
