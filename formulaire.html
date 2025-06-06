@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Allofacto - Accueil</title>
+  <title>Allofacto - Formulaire</title>
   <link rel="stylesheet" href="assets/css/Allofacto-css.css" />
 </head>
 <body>
@@ -15,31 +15,29 @@
       <nav class="main-nav">
         <ul class="nav-links">
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="realisations.html">Realisations</a></li>
-          <li><a href="formulaire.html">Formulaire</a></li>
+          <li><a href="formulaire.html" class="active">Formulaire</a></li>
         </ul>
         <div class="menu-toggle" id="menu-toggle">☰</div>
       </nav>
     </div>
   </header>
 
-  <!-- CONTENU PRINCIPAL -->
+  <!-- CONTENU -->
   <main>
-    <section class="hero">
-      <h2>Bienvenue sur Allofacto</h2>
-      <p>Votre solution simple pour gérer vos factures</p>
-    </section>
+    <section class="formulaire-section">
+      <h2>Formulaire de contact</h2>
+      <form action="#" method="POST" class="contact-form">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
 
-    <section class="categorie">
-      <a href="formulaire.html">
-        <img src="./img/electricite1.jpg" alt="Electricité" loading="lazy">
-      </a>
-      <a href="#">
-        <img src="./img/plomberie1.jpg" alt="Plomberie" loading="lazy">
-      </a>
-      <a href="#">
-        <img src="./img/menuiserie1.jpg" alt="Menuiserie" loading="lazy">
-      </a>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
     </section>
   </main>
 
@@ -51,7 +49,6 @@
   </footer>
 
   <!-- SCRIPTS -->
-  <script src="assets/js/lightbox.js"></script>
   <script src="assets/js/menu.js"></script>
 </body>
 </html>

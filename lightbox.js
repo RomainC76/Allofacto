@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
     overlay.className = 'lightbox-overlay';
     document.body.appendChild(overlay);
 
-    const lightboxImg = document.createElement('img');
-    overlay.appendChild(lightboxImg);
+    const overlayImg = document.createElement('img');
+    overlay.appendChild(overlayImg);
 
-    images.forEach(img => {
+    images.forEach((img) => {
         img.addEventListener('click', () => {
-            lightboxImg.src = img.src;
+            overlayImg.src = img.src;
             overlay.style.display = 'flex';
         });
     });
