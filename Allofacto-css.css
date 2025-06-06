@@ -203,8 +203,8 @@ main {
   padding-bottom: 80px; /* ajuste selon la hauteur de ton footer */
 }
 
-/* ============ FLEXBOX POUR LES IMAGES ============ */
-.flex-images {
+/* ============ MISE EN PAGE FLEXBOX POUR LES IMAGES ============ */
+.categorie {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -213,7 +213,7 @@ main {
   padding: 20px;
 }
 
-.flex-images img {
+.categorie img {
   flex: 1 1 200px;
   max-width: 100%;
   height: auto;
@@ -221,3 +221,4 @@ main {
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
