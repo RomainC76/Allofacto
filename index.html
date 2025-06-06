@@ -10,18 +10,6 @@
 
 <body>
 
-    <header>
-        <h1>ALLO FACTO</h1>
-        <p>Dépannage et petits travaux</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="realisations.html">Réalisations</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <main>
         <section id="a-propos">
             <h2>À propos d’ALLO FACTO</h2>
@@ -43,6 +31,19 @@
         <p>Téléphone : <a href="tel:0668538504">06.68.53.85.04</a></p>
         <p>Email : <a href="mailto:allo.facto76@gmail.com">allo.facto76@gmail.com</a></p>
     </footer>
+<script>
+    fetch('header.html')
+        .then(res => res.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('afterbegin', data);
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('nav-active');
+                burger.classList.toggle('toggle');
+            });
+        });
+</script>
 
 </body>
 

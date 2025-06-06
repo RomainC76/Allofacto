@@ -1,3 +1,4 @@
+<body>
 <h2>Réalisations d’ALLO FACTO</h2>
 
 <section>
@@ -33,3 +34,18 @@
         <li>Montage de meubles en kit</li>
     </ul>
 </section>
+<script>
+    fetch('header.html')
+        .then(res => res.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('afterbegin', data);
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('nav-active');
+                burger.classList.toggle('toggle');
+            });
+        });
+</script>
+
+</body>

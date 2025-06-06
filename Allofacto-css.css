@@ -62,13 +62,30 @@ header h1 {
 }
 
 .burger {
+  cursor: pointer;
   display: none;
   font-size: 1.5rem;
   background: none;
   border: none;
   color: #ffeb3b;
 }
+.burger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  display: block;
+  transition: 0.3s;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
 
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+}
 /* HERO */
 .hero {
   background-color: #333;
@@ -128,7 +145,9 @@ footer {
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .nav-links {
-    display: none;
+    display: flex;
+      list-style: none;
+      gap: 20px;
     flex-direction: column;
     width: 100%;
     background-color: #000;
@@ -137,8 +156,44 @@ footer {
   .nav-links.active {
     display: flex;
   }
-
+.nav-links[hidden] {
+  display: none;
+}
   .burger {
     display: block;
   }
+    @media screen and (max-width: 768px) {
+      .burger {
+        display: flex;
+      }
+  
+      .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: white;
+        width: 200px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        padding: 20px;
+        
+      }
+  
+      .nav-links.nav-active {
+        transform: translateX(0%);
+      }
+  
+      .burger.toggle span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+  
+      .burger.toggle span:nth-child(2) {
+        opacity: 0;
+      }
+  
+      .burger.toggle span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+}
 }

@@ -1,4 +1,7 @@
-<h2>Contactez ALLO FACTO</h2>
+
+
+<body>
+    <h2>Contactez ALLO FACTO</h2>
 <p>N’hésitez pas à me contacter pour tout autre besoin, ainsi que pour les tarifs.</p>
 <p>Les prestations proposées ne constituent pas une liste exhaustive, et je peux répondre sur mesure à vos demandes
     particulières.</p>
@@ -9,3 +12,19 @@
     <li>Zone d’intervention : Le Havre, Étretat, Fécamp, Bolbec, Honfleur, Deauville, Trouville... et leurs alentours
     </li>
 </ul>
+
+<script>
+    fetch('header.html')
+        .then(res => res.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('afterbegin', data);
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('nav-active');
+                burger.classList.toggle('toggle');
+            });
+        });
+</script>
+
+</body>
